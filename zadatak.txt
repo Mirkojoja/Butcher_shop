@@ -1,0 +1,25 @@
+ZADATAK:
+	Korišćenjem HTML i Sass tehnologija realizovati HTML stranicu prikazanu na slikama.
+	Implementirati sledeće zahteve:
+	
+	1.	Sass kod modularizovati minimalno tako da se korišćene promenljive i mixini pišu u posebnim
+		  sass datotekama koje se uključuju u glavni fajl.
+	2.	Boje, fontove kao i ostale korisne vrednosti (po sopstvenoj proceni) izdvojiti u sass promenljive.
+	3.	Realizovati responsive verzije stranice za veliki i mali ekran.
+	4.	Kada se misem predje preko delova u sekciji "Naše meso", cela podsekcija treba da dobije plavu a slike crvenu pozadinu.
+		(videti primer '4_hover.gif')
+	5.	Kada se pređe mišem preko linkova u glavnoj navigaciji, tekst u njima treba da se podvuče a boja pozadine da bude crvena
+		(videti primer '5_hover_navigacija.png')
+	6.	Sliku 'logo_favicon.png' postaviti kao ikonicu web stranice.
+  	7.  Koristiti git za verzionisanje tokom izrade zadatka. u lokalnom git repozitorijumu kreirati
+      	.gitignore datoteku koja odgovara ovom tipu projekta.
+
+BOJE:
+	
+	Plava:		#283148 	(40, 49, 72)
+	Crvena: 	#913535		(145, 53, 53)
+	Žuta:		#e9eec9		(233, 238, 201)
+
+WEB FONTOVI:
+	Noto Serif (Regular 400)	-	Tekst
+	Bebas Neue (Regular 400) 	- 	Logo i naslovi
