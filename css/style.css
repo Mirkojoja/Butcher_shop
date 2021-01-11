@@ -96,6 +96,7 @@ main {
 
 .container1 {
   padding: 3em 0;
+  margin-bottom: 3em;
 }
 .container1:before, .container1:after {
   content: "";
@@ -107,24 +108,29 @@ main {
 .container1 .img-container {
   width: 15%;
 }
-.container1 .img-container img {
+.container1:hover {
+  background-color: #913535;
+  border-radius: 10px;
+}
+.container1 img {
   background-color: #913535;
   width: 70%;
   border-radius: 10px;
   float: left;
   margin-right: 2em;
 }
-.container1 .text h3 {
+
+.text h3 {
   color: #000;
   float: right;
 }
-.container1 .text p {
+.text p {
   padding-top: 3em;
 }
 
 .container2 {
-  padding: 5em 0;
-  margin: 3em;
+  padding: 3em 0;
+  margin: 3em 0;
 }
 .container2:before, .container2:after {
   content: "";
@@ -135,23 +141,24 @@ main {
 }
 .container2 .img-container {
   width: 15%;
-  float: left;
+  float: right;
 }
-.container2 .img-container img {
+.container2:hover {
+  background-color: #913535;
+  border-radius: 10px;
+}
+.container2 img {
   background-color: #913535;
   width: 70%;
   border-radius: 10px;
   float: right;
   margin-right: 2em;
 }
-.container2 .img-container:hover + img {
-  background-color: #913535;
-}
-.container2 .img-container .text h3 {
+.container2 .text h3 {
   color: #000;
   float: left;
 }
-.container2 .img-container .text p {
+.container2 .text p {
   padding-top: 3em;
 }
 
@@ -201,15 +208,48 @@ main {
 .linkovi h3 {
   border-bottom: 1px solid #e9eec9;
 }
-.linkovi ol {
+.linkovi ul {
   padding: 1em 2em;
 }
-.linkovi ol li {
+.linkovi ul li {
   color: #e9eec9;
 }
 
 .map {
   float: right;
+}
+
+footer {
+  padding: 1em 15%;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+footer .logo-left {
+  float: left;
+}
+footer .logo-left img {
+  width: 20%;
+  float: left;
+  border: 1px solid #e9eec9;
+  border-radius: 5px;
+  margin-right: 1em;
+}
+footer .logo-left h1 {
+  color: #000;
+  line-height: 2em;
+  margin-left: 1em;
+}
+footer .rights {
+  float: right;
+  line-height: 4em;
+}
+footer .rights h1 {
+  color: #000;
 }
 
 /*# sourceMappingURL=style.css.map */

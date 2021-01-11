@@ -76,8 +76,15 @@ main {
 .container1 {
     padding: 3em 0;
     @include clearfix;
+    margin-bottom: 3em;
  .img-container {
      width: 15%;
+     
+ }
+ &:hover {
+    background-color: $main-red;
+    border-radius: 10px;
+}
      img {
         background-color: $main-red;
         width: 70%;
@@ -87,7 +94,6 @@ main {
     }
  }
 
-  
     .text {
        
         h3 {
@@ -99,23 +105,25 @@ main {
         }
       
     }
-}
+
 .container2 {
-    padding: 5em 0;
+    padding: 3em 0;
     @include clearfix;
-    margin: 3em;
- .img-container {
-     width: 15%;
-     float: left;
-     img {
+    margin: 3em 0;
+    .img-container {
+        width: 15%;
+        float: right;
+    }
+    &:hover {
+        background-color: $main-red;
+        border-radius: 10px;
+    }
+    img {
         background-color: $main-red;
         width: 70%;
         border-radius: 10px;
         float: right;
         margin-right: 2em;
-    }
-    &:hover + img {
-        background-color: $main-red;
     }
     .text {
        
@@ -125,13 +133,12 @@ main {
         }
         p {
             padding-top: 3em;
-           
         }
       
     }
- }
- 
+    
 }
+
 #nav-left {
     background-color: $blue-background;
     @include clearfix;
@@ -168,7 +175,7 @@ main {
      h3 {
         border-bottom: 1px solid $yellow-text;
      }
-     ol {
+     ul {
          padding: 1em 2em;
          li {
              color: $yellow-text;
@@ -177,4 +184,30 @@ main {
 }
 .map {
     float: right;
+}
+footer {
+    @include clearfix;
+    padding: 1em 15%;
+    .logo-left {
+        float: left;
+        img {
+            width: 20%;
+            float: left;
+            border: 1px solid $yellow-text;
+            border-radius: 5px;
+            margin-right: 1em;
+        }
+        h1 {
+            color: #000;
+            line-height: 2em;
+            margin-left: 1em;
+        }
+    }
+    .rights {
+        float: right;
+        line-height: 4em;
+        h1 {
+            color: #000;
+        }
+    }
 }
