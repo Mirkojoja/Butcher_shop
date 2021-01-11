@@ -4,7 +4,16 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-family: "Noto Serif", serif;
+}
+
+section, main, footer {
+  padding: 3em 15%;
+}
+
+h1, h2, h3 {
   font-family: "Bebas Neue", cursive;
+  color: #e9eec9;
 }
 
 header {
@@ -47,6 +56,26 @@ header nav ul li a {
   color: #e9eec9;
   text-decoration: none;
   font-size: 1.5em;
+}
+header nav ul li:hover {
+  background-color: #913535;
+  text-decoration: underline;
+}
+
+span {
+  color: #913535;
+  font-family: "Bebas Neue", cursive;
+}
+
+main {
+  background-image: url("../slike/background_raw.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.main-text {
+  margin-top: 20%;
+  font-size: 3em;
 }
 
 /*# sourceMappingURL=style.css.map */

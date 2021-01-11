@@ -3,6 +3,14 @@
 
 @include main;
 
+section, main ,footer {
+    padding: 3em 15%;
+}
+h1, h2 ,h3 {
+    font-family: $logo-font;
+    color: $yellow-text;
+}
+
 header {
     width: 100%;
     position: fixed;
@@ -30,10 +38,29 @@ header {
                     color:  $yellow-text;
                     text-decoration: none;
                     font-size: 1.5em;
-                }
+
             }
+            &:hover {
+                background-color: $main-red;
+                text-decoration: underline;
+            }
+        }
 
         }
 
     }
+}
+span {
+    color: $main-red;
+    font-family: $logo-font;
+}
+main {
+    background-image: url("../slike/background_raw.jpg");
+    background-size: cover;
+    height: 100vh;
+
+}
+.main-text {
+    margin-top: 20%;
+    font-size: 3em;
 }
