@@ -64,3 +64,72 @@ main {
     margin-top: 20%;
     font-size: 3em;
 }
+#nase-meso {
+    background-color: $yellow-text;
+    text-align: center;
+    @include clearfix;
+    h2 {
+        color: $main-red;
+        margin-bottom: 2em;
+    }
+}
+.container1 {
+    padding: 3em 0;
+    @include clearfix;
+ .img-container {
+     width: 15%;
+     img {
+        background-color: $main-red;
+        width: 70%;
+        border-radius: 10px;
+        float: left;
+        margin-right: 2em;
+    }
+ }
+
+  
+    .text {
+       
+        h3 {
+            color: #000;
+            float: right;
+        }
+        p {
+            padding-top: 3em;
+        }
+      
+    }
+}
+.container2 {
+    padding: 5em 0;
+    @include clearfix;
+    margin: 3em;
+ .img-container {
+     width: 15%;
+     float: left;
+     img {
+        background-color: $main-red;
+        width: 70%;
+        border-radius: 10px;
+        float: right;
+        margin-right: 2em;
+    }
+    &:hover + img {
+        background-color: $main-red;
+    }
+    .text {
+       
+        h3 {
+            color: #000;
+            float: left;
+        }
+        p {
+            padding-top: 3em;
+           
+        }
+      
+    }
+ }
+ 
+ 
+}

@@ -78,4 +78,81 @@ main {
   font-size: 3em;
 }
 
+#nase-meso {
+  background-color: #e9eec9;
+  text-align: center;
+}
+#nase-meso:before, #nase-meso:after {
+  content: "";
+  display: table;
+}
+#nase-meso:after {
+  clear: both;
+}
+#nase-meso h2 {
+  color: #913535;
+  margin-bottom: 2em;
+}
+
+.container1 {
+  padding: 3em 0;
+}
+.container1:before, .container1:after {
+  content: "";
+  display: table;
+}
+.container1:after {
+  clear: both;
+}
+.container1 .img-container {
+  width: 15%;
+}
+.container1 .img-container img {
+  background-color: #913535;
+  width: 70%;
+  border-radius: 10px;
+  float: left;
+  margin-right: 2em;
+}
+.container1 .text h3 {
+  color: #000;
+  float: right;
+}
+.container1 .text p {
+  padding-top: 3em;
+}
+
+.container2 {
+  padding: 5em 0;
+  margin: 3em;
+}
+.container2:before, .container2:after {
+  content: "";
+  display: table;
+}
+.container2:after {
+  clear: both;
+}
+.container2 .img-container {
+  width: 15%;
+  float: left;
+}
+.container2 .img-container img {
+  background-color: #913535;
+  width: 70%;
+  border-radius: 10px;
+  float: right;
+  margin-right: 2em;
+}
+.container2 .img-container:hover + img {
+  background-color: #913535;
+}
+.container2 .img-container .text h3 {
+  color: #000;
+  float: left;
+}
+.container2 .img-container .text p {
+  padding-top: 3em;
+}
+
 /*# sourceMappingURL=style.css.map */
