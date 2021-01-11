@@ -44,6 +44,20 @@ header nav img {
   border: 1px solid #e9eec9;
   border-radius: 5px;
 }
+header nav .burger {
+  float: right;
+  display: none;
+}
+header nav .burger:before, header nav .burger:after {
+  content: "";
+  display: table;
+}
+header nav .burger:after {
+  clear: both;
+}
+header nav .burger img {
+  width: 30%;
+}
 header nav ul {
   list-style: none;
 }
@@ -75,7 +89,14 @@ main {
 
 .main-text {
   margin-top: 20%;
-  font-size: 3em;
+  font-size: 2em;
+}
+.main-text:before, .main-text:after {
+  content: "";
+  display: table;
+}
+.main-text:after {
+  clear: both;
 }
 
 #nase-meso {
@@ -250,6 +271,75 @@ footer .rights {
 }
 footer .rights h1 {
   color: #000;
+}
+
+@media only screen and (max-width: 1230px) {
+  section, footer {
+    width: 100%;
+  }
+
+  header nav ul {
+    display: none;
+  }
+  header nav .burger {
+    display: inline-block;
+  }
+
+  main {
+    padding: 2em 20%;
+  }
+}
+@media only screen and (max-width: 920px) {
+  main {
+    background-image: unset;
+  }
+  main .main-text {
+    display: none;
+  }
+
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    list-style: none;
+    display: block;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  #nase-meso {
+    margin: 0 auto;
+  }
+  #nase-meso .container1, #nase-meso .container2 {
+    margin: 0 auto;
+    float: unset;
+    text-align: center;
+  }
+  #nase-meso .container1 img, #nase-meso .container2 img {
+    float: unset;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding: 2em 15%;
+    margin: 0 auto;
+  }
+  footer .linkovi {
+    float: unset;
+    display: none;
+  }
+  footer .left {
+    float: unset;
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer .map {
+    float: unset;
+  }
+  footer .map iframe {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
