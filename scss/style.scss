@@ -131,5 +131,50 @@ main {
     }
  }
  
- 
+}
+#nav-left {
+    background-color: $blue-background;
+    @include clearfix;
+     h2 {
+         text-align: center;
+         margin-bottom: 2em;
+     }
+     .left {
+         width: 30%;
+         float: left;
+         padding: 2em 0;
+         
+         h3 {
+            border-bottom: 1px solid $yellow-text;
+            
+         }
+         p {
+             text-align: justify;
+             color: $yellow-text;
+             padding: 1em 0;
+
+         }
+         address {
+             padding: 2em 0;
+         }
+     }
+
+}
+.linkovi {
+    float: left;
+     @include clearfix;
+     width: 25%;
+     padding: 1em 5em;
+     h3 {
+        border-bottom: 1px solid $yellow-text;
+     }
+     ol {
+         padding: 1em 2em;
+         li {
+             color: $yellow-text;
+         }
+     }
+}
+.map {
+    float: right;
 }
