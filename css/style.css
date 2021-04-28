@@ -89,7 +89,7 @@ main {
 
 .main-text {
   margin-top: 20%;
-  font-size: 2em;
+  font-size: 1.8em;
 }
 .main-text:before, .main-text:after {
   content: "";
@@ -212,16 +212,18 @@ main {
 }
 #nav-left .left address {
   padding: 2em 0;
+  color: #e9eec9;
 }
 
 .linkovi {
   float: left;
-  width: 25%;
+  width: 30%;
   padding: 1em 5em;
 }
 .linkovi:before, .linkovi:after {
   content: "";
   display: table;
+  padding: 0.5em 0;
 }
 .linkovi:after {
   clear: both;
@@ -230,7 +232,7 @@ main {
   border-bottom: 1px solid #e9eec9;
 }
 .linkovi ul {
-  padding: 1em 2em;
+  padding: 1em 0.5em;
 }
 .linkovi ul li {
   color: #e9eec9;

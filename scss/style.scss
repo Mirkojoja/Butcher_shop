@@ -72,8 +72,8 @@ main {
 
 }
 .main-text {
-    margin-top: 20%;
-    font-size: 2em;
+    margin-top: 25%;
+    font-size: 5em;
     @include clearfix;
 }
 #nase-meso {
@@ -174,7 +174,9 @@ main {
 
          }
          address {
-             padding: 2em 0;
+            padding: 2em 0;
+            
+            
          }
      }
 
@@ -182,7 +184,7 @@ main {
 .linkovi {
     float: left;
      @include clearfix;
-     width: 25%;
+     width: 30%;
      padding: 1em 5em;
      h3 {
         border-bottom: 1px solid $yellow-text;
